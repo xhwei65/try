@@ -1,0 +1,7 @@
+System.DllNotFoundException
+Unable to load DLL 'libleveldb' or one of its dependencies: 找不到指定的模块。 (Exception from HRESULT: 0x8007007E)
+   at Neo.IO.Data.LevelDB.Native.leveldb_options_create()
+   at Neo.Persistence.LevelDB.LevelDBStore..ctor(String path)
+   at Neo.Shell.MainService.OnStart(String[] args)
+   at Neo.Services.ConsoleServiceBase.Run(String[] args)
+   at Neo.Program.Main(String[] args)

@@ -1,0 +1,33 @@
+2020/04/24-13:48:44.659 35a0 Recovering log #33
+2020/04/24-13:48:44.659 35a0 Level-0 table #36: started
+2020/04/24-13:48:44.674 35a0 Level-0 table #36: 711139 bytes OK
+2020/04/24-13:48:44.674 35a0 Delete type=0 #33
+2020/04/24-13:48:44.674 35a0 Delete type=3 #31
+2020/04/24-13:48:45.112 34c0 Compacting 1@0 + 1@1 files
+2020/04/24-13:48:45.158 34c0 Generated table #38@0: 10259 keys, 1948436 bytes
+2020/04/24-13:48:45.158 34c0 Compacted 1@0 + 1@1 files => 1948436 bytes
+2020/04/24-13:48:45.158 34c0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2020/04/24-13:48:45.158 34c0 Delete type=2 #34
+2020/04/24-13:48:45.158 34c0 Delete type=2 #36
+2020/04/29-09:13:12.722 34c0 Level-0 table #40: started
+2020/04/29-09:13:12.776 34c0 Level-0 table #40: 3766997 bytes OK
+2020/04/29-09:13:12.779 34c0 Delete type=0 #37
+2020/04/29-09:26:29.857 34c0 Compacting 1@0 + 1@1 files
+2020/04/29-09:26:29.908 34c0 Generated table #41@0: 7112 keys, 2112584 bytes
+2020/04/29-09:26:29.935 34c0 Generated table #42@0: 10087 keys, 1194917 bytes
+2020/04/29-09:26:29.935 34c0 Compacted 1@0 + 1@1 files => 3307501 bytes
+2020/04/29-09:26:29.935 34c0 compacted to: files[ 0 2 0 0 0 0 0 ]
+2020/04/29-09:26:29.935 34c0 Delete type=2 #38
+2020/04/29-09:26:29.936 34c0 Delete type=2 #40
+2020/05/07-10:56:11.954 34c0 Level-0 table #44: started
+2020/05/07-10:56:12.006 34c0 Level-0 table #44: 3767000 bytes OK
+2020/05/07-10:56:12.008 34c0 Delete type=0 #39
+2020/05/07-11:09:43.422 34c0 Compacting 1@0 + 2@1 files
+2020/05/07-11:09:43.509 34c0 Generated table #45@0: 7112 keys, 2112596 bytes
+2020/05/07-11:09:43.562 34c0 Generated table #46@0: 16065 keys, 2113580 bytes
+2020/05/07-11:09:43.572 34c0 Generated table #47@0: 962 keys, 440649 bytes
+2020/05/07-11:09:43.572 34c0 Compacted 1@0 + 2@1 files => 4666825 bytes
+2020/05/07-11:09:43.572 34c0 compacted to: files[ 0 3 0 0 0 0 0 ]
+2020/05/07-11:09:43.573 34c0 Delete type=2 #41
+2020/05/07-11:09:43.573 34c0 Delete type=2 #42
+2020/05/07-11:09:43.574 34c0 Delete type=2 #44

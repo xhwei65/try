@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>2015-2019 The Neo Project</Copyright>
+    <AssemblyTitle>Neo.Compiler.MSIL</AssemblyTitle>
+    <Version>2.6</Version>
+    <Authors>The Neo Project</Authors>
+    <AssemblyName>neon</AssemblyName>
+    <PackageTags>NEO;Blockchain;Smart Contract;Compiler</PackageTags>
+    <PackageProjectUrl>https://github.com/neo-project/neo-devpack-dotnet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/neo-project/neo-devpack-dotnet.git</RepositoryUrl>
+    <RootNamespace>Neo.Compiler</RootNamespace>
+    <Company>The Neo Project</Company>
+    <Product>Neo.Compiler.MSIL</Product>
+    <Description>NEO Compiler for .NET</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageIcon>neo-logo-72.png</PackageIcon>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <!--
+    https://johan-v-r.github.io/2018/09/05/NET-Core-Global-Tools-Configuration/
+      `dotnet pack` to build .NET Core 3.1 global tool
+      `dotnet pack /p:SharedLibrary=true` to build .NET Standard 2.0 library package
+  -->
+
+  <PropertyGroup Condition="'$(SharedLibrary)' != true">
+    <OutputType>Exe</OutputType>
+    <PackageId>Neo.Neon</PackageId>
+    <PackAsTool>true</PackAsTool>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(SharedLibrary)' == true">
+    <PackageId>Neo.Compiler.MSIL</PackageId>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.3.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="3.3.1" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.1" />
+    <PackageReference Include="Neo.VM" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Neo.SmartContract.Framework\Neo.SmartContract.Framework.csproj" />
+    <None Include="../neo-logo-72.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+</Project>
